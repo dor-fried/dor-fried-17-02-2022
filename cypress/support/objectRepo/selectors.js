@@ -1,6 +1,7 @@
 class mainPage {
 
     elements = {
+        mainLogo: () => cy.get('#logom'),
         inputName: () => cy.get('input[name="name"]'),
         inputEmail: () => cy.get('input[name="email"]'),
         inputPhone: () => cy.get('input[name="phone"]'),

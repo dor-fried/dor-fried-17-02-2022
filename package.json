@@ -7,11 +7,9 @@
     "test": "cypress run --browser chrome",
     "open": "cypress open"
   },
-  "author": "",
+  "author": "Dor Fried",
   "license": "ISC",
   "dependencies": {
-    "@envato/cookie-consent": "^2.0.1",
-    "cookie-parser": "^1.4.6",
     "cypress": "^9.5.0"
   },
   "devDependencies": {

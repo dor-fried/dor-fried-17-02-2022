@@ -1,28 +1,26 @@
 import mainPage from '../support/objectRepo/selectors'
 
-describe('Functionality tests', () => {
-    
-    beforeEach(function () {
-        cy.visit(Cypress.env('baseurl'));
-        cy.fixture('dataSet').then(function (dataSet) {
-            this.dataSet = dataSet
-        });
+describe('Functionality tests', function () {
+
+    it('should main logo "Herolo" has visible', () => {
+        mainPage.elements.mainLogo()
+            .should('be.visible')
     });
 
-    it('Get the global window.location object of the page that is currently active', function () {
+    it('get the global window.location object of the page that is currently active', function () {
         cy.location().should((loc) => {
             expect(loc.hostname).to.eq('automation.herolo.co.il')
         });
     });
 
-    it('logo text has display - מפתחים בשפה שלך', () => {
+    it('should logo has exist in page', () => {
         mainPage.elements.logoText_1()
             .should('exist')
         mainPage.elements.logoText_2()
             .should('exist')
     });
 
-    it('should send form data', function () {
+    it('should send form data and get 200 OK', function () {
         mainPage.typeName(this.dataSet.validName);
         mainPage.typeEmail(this.dataSet.validEmail);
         mainPage.typePhone(this.dataSet.validPhone);
@@ -37,7 +35,7 @@ describe('Functionality tests', () => {
             .should('exist')
     });
 
-    it('should attampt to send form with no data - validate alerts', function () {
+    it('should attampt to send form with no data - validate error message', function () {
         mainPage.clickSendButton();
         mainPage.elements.getErrorMessageInputName()
             .should('exist')
@@ -47,7 +45,7 @@ describe('Functionality tests', () => {
             .should('exist')
     });
 
-    it('should disaply alert when email input are not valid', function () {
+    it('should alert message when email input are not valid', function () {
         mainPage.typeName(this.dataSet.validName);
         mainPage.typeEmail(this.dataSet.invalidEmail);
         mainPage.elements.getErrorMessageWhenInputEmailnotValid()
