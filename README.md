@@ -8,13 +8,13 @@
 
 The Test senacrios is:
 
-1. Logo "Herolo" has visible'
+1. Logo "Herolo" has visible
 
 2. get the global window.location object of the page that is currently active
 
 3. should logo has exist in page
 
-4. should send form data
+4. should send form data and get 200 OK
 
 5. should attampt to send form with no data - validate alerts input
 
