@@ -6,9 +6,9 @@
 - The project write with Page Object Design Pattern.
 
 
-The test senacrios is:
+The Test senacrios is:
 
-1. logo "Herolo" has visible'
+1. Logo "Herolo" has visible'
 
 2. get the global window.location object of the page that is currently active
 
@@ -16,7 +16,7 @@ The test senacrios is:
 
 4. should send form data
 
-5. should attampt to send form with no data - validate alerts
+5. should attampt to send form with no data - validate alerts input
 
 6. should disaply alert when email input are not valid
 
