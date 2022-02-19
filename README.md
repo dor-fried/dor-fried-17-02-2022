@@ -2,8 +2,9 @@
 
 - This repo contains a functuinality tests of webpage "https://automation.herolo.co.il/".
 - The tests written with Cypress.
+- The project use logical project and structure and code separation with reports mocha.
 - Environment Variables are used.
-- Each test scenario is isolated from all other test cases
+- Each test scenario is isolated from all other test cases.
 - The project write with Page Object Design Pattern.
 
 
