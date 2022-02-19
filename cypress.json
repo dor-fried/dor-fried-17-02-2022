@@ -1,0 +1,9 @@
+{
+    "env": {
+        "baseurl": "https://automation.herolo.co.il",
+        "requestAPI": "https://automation.herolo.co.il/page-data/"
+    },
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 10000,
+    "video": false
+}
