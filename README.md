@@ -31,9 +31,8 @@ The Test senacrios is:
 
 ### 2. Fork this repo
 
-If you want to experiment with running this project in Continuous Integration, you'll need to [fork](https://github.com/cypress-io/cypress-example-phonecat#fork-destination-box) it first.
-
-After forking this project in `Github`, run these commands:
+If you want to experiment with running this project,
+After forking this project in Github, run these commands:
 
 ```bash
 ## clone this repo to a local directory
