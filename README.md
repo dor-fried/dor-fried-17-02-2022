@@ -24,3 +24,27 @@ The Test senacrios is:
 7. get the length of the menu link items
 
 8. check if the whatsapp link is actually live
+
+### 1. Install Cypress
+
+[Follow these instructions to install Cypress.](https://on.cypress.io/installing-cypress)
+
+### 2. Fork this repo
+
+If you want to experiment with running this project in Continuous Integration, you'll need to [fork](https://github.com/cypress-io/cypress-example-phonecat#fork-destination-box) it first.
+
+After forking this project in `Github`, run these commands:
+
+```bash
+## clone this repo to a local directory
+git clone https://github.com/dor-fried/dor-fried-17-02-2022.git
+
+## cd into the cloned repo
+cd cypress-example-abra
+
+## install the node_modules
+npm install
+
+## run the test
+npm test
+```
