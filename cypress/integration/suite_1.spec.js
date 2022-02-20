@@ -24,7 +24,7 @@ describe('Functionality tests', function () {
         mainPage.typeName(this.dataSet.validName);
         mainPage.typeEmail(this.dataSet.validEmail);
         mainPage.typePhone(this.dataSet.validPhone);
-        cy.request('https://automation.herolo.co.il/page-data/thank-you/page-data.json').as('page-data')
+        cy.request('/page-data/thank-you/page-data.json').as('page-data')
         mainPage.clickSendButton();
         cy.get('@page-data').should((response) => {
             expect(response.status).to.eq(200)
