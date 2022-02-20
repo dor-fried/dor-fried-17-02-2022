@@ -13,7 +13,7 @@ describe('Functionality tests', function () {
         });
     });
 
-    it('should logo has exist in page', () => {
+    it('should logo - מפתחים בשפה שלך has exist in page', () => {
         mainPage.elements.logoText_1()
             .should('exist')
         mainPage.elements.logoText_2()
