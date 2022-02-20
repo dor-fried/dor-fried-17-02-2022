@@ -2,7 +2,7 @@ import mainPage from '../support/objectRepo/selectors'
 
 describe('Functionality tests', function () {
 
-    it('should main logo "Herolo" has visible', () => {
+    it('should main logo "Herolo" has visible', function () {
         mainPage.elements.mainLogo()
             .should('be.visible')
     });
@@ -13,7 +13,7 @@ describe('Functionality tests', function () {
         });
     });
 
-    it('should logo - מפתחים בשפה שלך has exist in page', () => {
+    it('should logo - מפתחים בשפה שלך has exist in page', function () {
         mainPage.elements.logoText_1()
             .should('exist')
         mainPage.elements.logoText_2()
