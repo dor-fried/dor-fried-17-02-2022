@@ -12,8 +12,8 @@ class mainPage {
         getErrorMessageWhenInputEmailnotValid: () => cy.xpath('//span[text()="כתובת אימייל לא חוקית"]'),
         getErrorMessageInputPhone: () => cy.xpath('//span[text()="שדה טלפון הוא שדה חובה"]'),
         linkItemList: () => cy.get('.portfolio__Portfolio-sc-80s039-0 .slick-slider .slick-dots'),
-        logoText_1: () => cy.xpath('//span[text()="מפתחים"]'),
-        logoText_2: () => cy.xpath('//span[text()="בשפה שלך"]'),
+        logoText1: () => cy.xpath('//span[text()="מפתחים"]'),
+        logoText2: () => cy.xpath('//span[text()="בשפה שלך"]'),
         whatsappLink: () => cy.get('.callUsWhatsapp__BtnWhatsapp-rkzbui-0')
     }
     
