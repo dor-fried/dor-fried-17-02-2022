@@ -14,9 +14,9 @@ describe('Functionality tests', function () {
     });
 
     it('should logo - מפתחים בשפה שלך has exist in page', function () {
-        mainPage.elements.logoText_1()
+        mainPage.elements.logoText1()
             .should('exist')
-        mainPage.elements.logoText_2()
+        mainPage.elements.logoText2()
             .should('exist')
     });
 
